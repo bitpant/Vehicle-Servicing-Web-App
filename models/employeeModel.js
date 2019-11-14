@@ -20,15 +20,13 @@ const employeeSchema =new mongoose.Schema({
   city: String,
   state: String,
   password: String,
-  status: Number,
   mobileNumber: Number,
-  registrationDate: Date,
   roleId: Number,
   createdDate: Date,
 });
 
 
-const Employee= mongoose.model('PersonInfo', employeeSchema);
+const Employee= mongoose.model('EmployeeDetails', employeeSchema);
 
 // eslint-disable-next-line require-jsdoc
 function validateEmployee(employee) {

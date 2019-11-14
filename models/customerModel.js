@@ -20,14 +20,14 @@ const customerSchema =new mongoose.Schema({
   city: String,
   state: String,
   password: String,
-  status: Number,
+  status: Number, // approved/not approved
   mobileNumber: Number,
   registrationDate: Date,
   createdDate: Date,
 });
 
 
-const Customer= mongoose.model('PersonInfo', customerSchema);
+const Customer= mongoose.model('CustomerDetails', customerSchema);
 
 // eslint-disable-next-line require-jsdoc
 function validateCustomer(customer) {
@@ -53,6 +53,7 @@ function validateCustomer(customer) {
     }),
     city: Joi.string().required(),
     state: Joi.string().required(),
+    status: Joi.number().required(),
     createdDate: Joi.date(),
   };
 
