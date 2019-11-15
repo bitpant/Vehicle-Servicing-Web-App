@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const LoginStatusModel = require('../models/login.status.model');
+// const LoginStatusModel = require('../models/login.status.model');
 const LoginStatus = mongoose.model('LoginStatus');
 
 const LoginStatusController = {};
