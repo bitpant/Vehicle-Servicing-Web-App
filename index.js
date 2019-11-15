@@ -19,4 +19,8 @@ if (app.get('env')==='development') {
   console.log(`Morgan enabled...`);
 }
 
+const CustomerRoutes=require('./routes/customer.routes.js');
+
+app.use([CustomerRoutes]);
+
 app.listen(port, ()=>console.log(`Listening on Port ${port}.....`));
