@@ -7,7 +7,7 @@ const CustomerController = require('../controllers/customer.controller');
 
 // Auth Customer
 router.post('/api/customerlogin', function(req, res) {
-  CustomerController.AuthCustomer(req, res);
+  CustomerController.AuthUser(req, res);
 });
 
 // Customer CRUD Operations
