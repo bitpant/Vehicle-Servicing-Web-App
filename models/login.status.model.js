@@ -11,5 +11,5 @@ const LoginStatusSchema = new mongoose.Schema(
     {timestamps: true}
 );
 
-module.exports = mongoose.model('LoginStatus', LoginStatusSchema);
+module.exports.LoginStatus = mongoose.model('LoginStatus', LoginStatusSchema);
 

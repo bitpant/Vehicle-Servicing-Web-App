@@ -3,27 +3,29 @@ const Joi = require('joi');
 
 const customerSchema =new mongoose.Schema({
   CustomerId: Number,
-  fullName: {
+  fullName: String,
+  /* fullName: {
     firstName: String,
     middleName: String,
     lastName: String,
-  },
-  gender: String,
-  dob: Date,
-  age: Number,
-  address: {
+  },*/
+  // gender: String,
+  // dob: Date,
+  email: String,
+  // age: Number,
+  address: String,
+  /* address: {
     flatNumber: String,
     societyName: String,
     streetName: String,
     pincode: Number,
-  },
+  },*/
   city: String,
-  state: String,
+  // state: String,
   password: String,
   status: Number, // approved/not approved
   mobileNumber: Number,
   registrationDate: Date,
-  createdDate: Date,
 });
 
 
